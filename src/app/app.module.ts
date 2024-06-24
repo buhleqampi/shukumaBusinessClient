@@ -3,10 +3,20 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { ViewProductsComponent } from './view-products/view-products.component';
+import { ViewOneProductComponent } from './view-one-product/view-one-product.component';
+import { ViewOrdersComponent } from './view-orders/view-orders.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminDashboardComponent,
+    AddproductComponent,
+    ViewProductsComponent,
+    ViewOneProductComponent,
+    ViewOrdersComponent
   ],
   imports: [
     BrowserModule,
