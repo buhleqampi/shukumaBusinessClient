@@ -5,13 +5,16 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { ViewProductsComponent } from './view-products/view-products.component';
 import { ViewOneProductComponent } from './view-one-product/view-one-product.component';
 import { ViewOrdersComponent } from './view-orders/view-orders.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {path: '', redirectTo:'home' , pathMatch: 'full'},
   {path : 'admin', component: AdminDashboardComponent},
   {path : 'addproduct', component: AddproductComponent},
   {path : 'oneproduct', component: ViewOneProductComponent},
   {path : 'view products', component: ViewProductsComponent},
   {path : 'Orders', component: ViewOrdersComponent},
+  {path : 'home',component:HomeComponent}
 ];
 
 @NgModule({
