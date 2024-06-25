@@ -7,6 +7,9 @@ import { ViewOneProductComponent } from './view-one-product/view-one-product.com
 import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { SettingsComponent } from './settings/settings.component';
+import { StatsComponent } from './stats/stats.component';
+import { ChatsComponent } from './chats/chats.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home' , pathMatch: 'full'},
@@ -16,7 +19,10 @@ const routes: Routes = [
   {path : 'view products', component: ViewProductsComponent},
   {path : 'Orders', component: ViewOrdersComponent},
   {path : 'home',component:HomeComponent},
-  {path : 'sidenav',component:SidenavComponent}
+  {path : 'sidenav',component:SidenavComponent},
+  {path: 'settings',component:SettingsComponent},
+  {path: 'stats', component:StatsComponent},
+  {path: 'chats', component:ChatsComponent}
 ];
 
 @NgModule({
