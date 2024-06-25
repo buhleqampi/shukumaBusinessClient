@@ -10,6 +10,7 @@ import { ViewOneProductComponent } from './view-one-product/view-one-product.com
 import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     ViewOneProductComponent,
     ViewOrdersComponent,
     HomeComponent,
-    SidenavComponent
+    SidenavComponent,
+    BottomNavComponent
   ],
   imports: [
     BrowserModule,
