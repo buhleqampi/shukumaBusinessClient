@@ -9,6 +9,7 @@ import { ViewProductsComponent } from './view-products/view-products.component';
 import { ViewOneProductComponent } from './view-one-product/view-one-product.component';
 import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { HomeComponent } from './home/home.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     ViewProductsComponent,
     ViewOneProductComponent,
     ViewOrdersComponent,
-    HomeComponent
+    HomeComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
