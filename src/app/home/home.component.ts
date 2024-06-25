@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 
 @Component({
@@ -7,12 +7,11 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  products = this.productService.getProducts();
+  // cards: number[] = [1, 2, 3, 4];
 
-  constructor(private productService: ProductService) {}
+  constructor() {}
 
-  // addProduct() {
-  //   this.productService.addProduct({ name: 'New Product', description: 'Product Description' });
-  // }
-
+  ngOnInit(): void {}
 }
+
+
