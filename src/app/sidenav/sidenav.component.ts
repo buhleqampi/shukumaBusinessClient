@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface SideNavToggle {
   screenwidth:number;
@@ -22,12 +23,25 @@ throw new Error('Method not implemented.');
     icon: 'fas fa-home'
   },
   {
-    label: 'Chart',
+    label: 'Stats',
     routerLink: '/admin',
     icon: 'fas fa-chart-bar'
   },
   {
-   label: 'Stats'
+   label: 'Chats',
+   RouterLink: '',
+   icon:'fas fa-comment'
+  },
+  {
+   label:'Settings',
+   RouterLink: '',
+   icon:'fas fa-cog'
+  },
+
+  {
+   label: 'LogOut',
+   RouterLink:'',
+   icon: 'fas fa-sign-out'
   },
   // Add more nav items as needed
 ];
