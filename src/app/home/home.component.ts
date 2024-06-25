@@ -11,8 +11,8 @@ export class HomeComponent {
 
   constructor(private productService: ProductService) {}
 
-  addProduct() {
-    this.productService.addProduct({ name: 'New Product', description: 'Product Description' });
-  }
+  // addProduct() {
+  //   this.productService.addProduct({ name: 'New Product', description: 'Product Description' });
+  // }
 
 }
