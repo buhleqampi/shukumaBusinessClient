@@ -10,13 +10,7 @@ import { ViewOneProductComponent } from './view-one-product/view-one-product.com
 import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-<<<<<<< HEAD
-import { StatsComponent } from './stats/stats.component';
-import { SettingsComponent } from './settings/settings.component';
-import { ChatsComponent } from './chats/chats.component';
-=======
 import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
->>>>>>> feature/BuhleGetAllProducts
 
 @NgModule({
   declarations: [
@@ -28,13 +22,7 @@ import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
     ViewOrdersComponent,
     HomeComponent,
     SidenavComponent,
-<<<<<<< HEAD
-    StatsComponent,
-    SettingsComponent,
-    ChatsComponent
-=======
     BottomNavComponent
->>>>>>> feature/BuhleGetAllProducts
   ],
   imports: [
     BrowserModule,
