@@ -15,15 +15,6 @@ export class ProductService {
     return this.products;
   }
 
-  addProduct(product: Product) {
-    this.products.push(product);
-  }
+  
 
-  updateProduct(index: number, product: Product) {
-    this.products[index] = product;
-  }
-
-  deleteProduct(index: number) {
-    this.products.splice(index, 1);
-  }
 }

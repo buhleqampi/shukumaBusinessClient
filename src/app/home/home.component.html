@@ -1,14 +1,15 @@
 <div class="container mx-auto mt-8">
   <h1 class="text-3xl font-bold mb-4">Product Management</h1>
-  <button class="bg-blue-500 text-white py-2 px-4 rounded" (click)="addProduct()">Add Product</button>
+  <button class="bg-blue-500 text-white py-2 px-4 rounded" >Add Product</button>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+
       <div *ngFor="let product of products; let i = index" class="border p-4 rounded shadow-lg">
           <h2 class="text-xl font-bold">{{ product.name }}</h2>
           <p>{{ product.description }}</p>
           <div class="mt-4">
-              <button class="bg-yellow-500 text-white py-1 px-2 rounded mr-2" (click)="editProduct(i)">Edit</button>
-              <button class="bg-red-500 text-white py-1 px-2 rounded" (click)="deleteProduct(i)">Delete</button>
+              <!-- <button class="bg-yellow-500 text-white py-1 px-2 rounded mr-2" (click)="editProduct(i)">Edit</button>
+              <button class="bg-red-500 text-white py-1 px-2 rounded" (click)="deleteProduct(i)">Delete</button> -->
           </div>
       </div>
   </div>
