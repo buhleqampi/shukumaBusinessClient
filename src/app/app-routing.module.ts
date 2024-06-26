@@ -10,19 +10,22 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { SettingsComponent } from './settings/settings.component';
 import { StatsComponent } from './stats/stats.component';
 import { ChatsComponent } from './chats/chats.component';
+import { BusinessprofileComponent } from './businessprofile/businessprofile.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home' , pathMatch: 'full'},
   {path : 'admin', component: AdminDashboardComponent},
   {path : 'addproduct', component: AddproductComponent},
   {path : 'oneproduct', component: ViewOneProductComponent},
-  {path : 'view products', component: ViewProductsComponent},
-  {path : 'Orders', component: ViewOrdersComponent},
+  {path : 'products', component: ViewProductsComponent},
+  {path : 'orders', component: ViewOrdersComponent},
   {path : 'home',component:HomeComponent},
   {path : 'sidenav',component:SidenavComponent},
-  {path: 'settings',component:SettingsComponent}, 
+  {path: 'settings',component:SettingsComponent},
   {path: 'stats', component:StatsComponent},
-  {path: 'chats', component:ChatsComponent}
+  {path: 'chats', component:ChatsComponent},
+  {path: 'businessprofile', component:BusinessprofileComponent},
+
 ];
 
 @NgModule({

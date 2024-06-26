@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './view-products.component.css'
 })
 export class ViewProductsComponent {
+  Product:any = []
 
 }
