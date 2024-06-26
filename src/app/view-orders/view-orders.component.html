@@ -1,1 +1,33 @@
-<p>view-orders works!</p>
+<!-- Orders Section -->
+<section class="bg-white py-12">
+  <div class="container mx-auto">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Orders</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full table-auto">
+        <thead>
+          <tr class="bg-gray-200 text-gray-700">
+            <th class="px-4 py-2">Order ID</th>
+            <th class="px-4 py-2">Customer</th>
+            <th class="px-4 py-2">Total</th>
+            <th class="px-4 py-2">Status</th>
+            <th class="px-4 py-2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="px-4 py-2">123456</td>
+            <td class="px-4 py-2">John Doe</td>
+            <td class="px-4 py-2">$99.99</td>
+            <td class="px-4 py-2">Pending</td>
+            <td class="px-4 py-2">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                View Details
+              </button>
+            </td>
+          </tr>
+          <!-- Add more order rows here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
