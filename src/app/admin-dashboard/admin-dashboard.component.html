@@ -33,6 +33,19 @@
         </div>
     </nav>
 </div>
-<app-sidenav></app-sidenav>
+<div class="grid grid-cols-3 gap-4 p-4">
+    <div class="bg-gray-100 rounded-md p-4 text-center">
+      <h2 class="text-lg font-medium mb-2">Sales</h2>
+      <p class="text-2xl font-bold">{{ salesValue }}</p>
+    </div>
+    <div class="bg-gray-100 rounded-md p-4 text-center">
+      <h2 class="text-lg font-medium mb-2">Visitors</h2>
+      <p class="text-2xl font-bold">{{ visitorsValue }}</p>
+    </div>
+    <div class="bg-gray-100 rounded-md p-4 text-center">
+      <h2 class="text-lg font-medium mb-2">Orders</h2>
+      <p class="text-2xl font-bold">{{ ordersValue }}</p>
+    </div>
+  </div>
 
     
