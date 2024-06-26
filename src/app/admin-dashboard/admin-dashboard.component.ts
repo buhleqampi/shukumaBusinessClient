@@ -7,28 +7,26 @@ import { Router } from '@angular/router';
   styleUrl: './admin-dashboard.component.css'
 })
 export class AdminDashboardComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  
   constructor(private router: Router) {}
 
   navigateToRoute(route: string) {
     this.router.navigate([route]);
   }
-  // salesValue: number = 0;
-  // visitorsValue: number = 0;
-  // ordersValue: number = 0;
+  salesValue: number = 0;
+  visitorsValue: number = 0;
+  ordersValue: number = 0;
 
-  // ngOnInit() {
-  //   this.updateData();
-  //   setInterval(() => {
-  //     this.updateData();
-  //   }, 2000);
-  // }
+  ngOnInit() {
+    this.updateData();
+    setInterval(() => {
+      this.updateData();
+    }, 2000);
+  }
 
-  // updateData() {
-  //   this.salesValue = this.salesValue + 500;
-  //   this.visitorsValue = this.visitorsValue + 50;
-  //   this.ordersValue = this.ordersValue + 5;
-  // }
+  updateData() {
+    this.salesValue = this.salesValue + 500;
+    this.visitorsValue = this.visitorsValue + 50;
+    this.ordersValue = this.ordersValue + 5;
+  }
 }
