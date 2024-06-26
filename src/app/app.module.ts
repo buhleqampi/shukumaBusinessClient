@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,13 +11,10 @@ import { ViewOneProductComponent } from './view-one-product/view-one-product.com
 import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-<<<<<<< HEAD
 import { StatsComponent } from './stats/stats.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ChatsComponent } from './chats/chats.component';
-=======
 import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
->>>>>>> feature/BuhleGetAllProducts
 
 @NgModule({
   declarations: [
@@ -28,17 +26,15 @@ import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
     ViewOrdersComponent,
     HomeComponent,
     SidenavComponent,
-<<<<<<< HEAD
     StatsComponent,
     SettingsComponent,
-    ChatsComponent
-=======
+    ChatsComponent,
     BottomNavComponent
->>>>>>> feature/BuhleGetAllProducts
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
