@@ -17,8 +17,11 @@ export class AppComponent {
     this.collapsed = this.isNavbarOpen;
   }
   
-  navigateTo(path: string) {
-    this.router.navigate([path]);
-    this.toggleNavbar(); // Close the navbar after navigation
+  // navigateTo(path: string) {
+  //   this.router.navigate([path]);
+  //   this.toggleNavbar(); // Close the navbar after navigation
+  // }
+  closeNavbar() {
+    this.isNavbarOpen = false;
   }
 }
