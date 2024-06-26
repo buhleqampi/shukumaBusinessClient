@@ -1,21 +1,23 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
-interface SideNavToggle{
-  screenwidth: number;
-  collapsed: boolean;
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shukuma-business-client';
+  isNavbarOpen = false;
+  collapsed = false;
 
-  isSideNavCollapsed = false;
-  screenwidth = 0;
+  constructor(private router: Router) {}
 
-  onToggleSideNav(): void{
-   
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+    this.toggleNavbar();
   }
 }
