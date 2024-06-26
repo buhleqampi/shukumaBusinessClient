@@ -1,10 +1,23 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shukuma-business-client';
+  isNavbarOpen = false;
+  collapsed = false;
+
+  constructor(private router: Router) {}
+
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+    this.toggleNavbar();
+  }
 }
