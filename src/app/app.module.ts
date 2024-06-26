@@ -15,6 +15,7 @@ import { StatsComponent } from './stats/stats.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ChatsComponent } from './chats/chats.component';
 import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
+import { BusinessprofileComponent } from './businessprofile/businessprofile.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
     StatsComponent,
     SettingsComponent,
     ChatsComponent,
-    BottomNavComponent
+    BottomNavComponent,
+    BusinessprofileComponent
   ],
   imports: [
     BrowserModule,
