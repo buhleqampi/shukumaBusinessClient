@@ -18,6 +18,5 @@ export class AddproductComponent {
 
   addProduct() {
     console.log(this.product);
-    // Add your logic to save the product details
   }
 }

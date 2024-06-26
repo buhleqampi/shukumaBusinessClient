@@ -20,7 +20,7 @@ const routes: Routes = [
   {path : 'Orders', component: ViewOrdersComponent},
   {path : 'home',component:HomeComponent},
   {path : 'sidenav',component:SidenavComponent},
-  {path: 'settings',component:SettingsComponent},
+  {path: 'settings',component:SettingsComponent}, 
   {path: 'stats', component:StatsComponent},
   {path: 'chats', component:ChatsComponent}
 ];
