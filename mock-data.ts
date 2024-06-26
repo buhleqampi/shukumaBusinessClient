@@ -1,36 +1,43 @@
-import { Product } from "./src/app/interface/product";
+import { Order } from "./src/app/interface/order";
 
-export const products: Product[] = [
+export const orders: Order[] = [
   {
-    id: 1,
-    name: 'Product 1',
-    description: 'Description of Product 1',
-    price: 19.99,
-    imageUrl: 'https://via.placeholder.com/150',
-    quantity: 10
+    description: 'Electronics Order',
+    total: 299.99,
+    user: 'Alice Johnson',
+    address: {
+      street: '123 Elm St',
+      city: 'Springfield',
+      postalCode: '12345',
+      country: 'USA',
+    },
+    items: ['Laptop', 'Mouse'],
+    orderNumber: 1001,
   },
   {
-    id: 2,
-    name: 'Product 2',
-    description: 'Description of Product 2',
-    price: 29.99,
-    imageUrl: 'https://via.placeholder.com/150',
-    quantity: 5
+    description: 'Books Order',
+    total: 89.99,
+    user: 'Bob Smith',
+    address: {
+      street: '456 Oak St',
+      city: 'Greenville',
+      postalCode: '67890',
+      country: 'USA',
+    },
+    items: ['Book A', 'Book B', 'Book C'],
+    orderNumber: 1002,
   },
   {
-    id: 3,
-    name: 'Product 3',
-    description: 'Description of Product 3',
-    price: 39.99,
-    imageUrl: 'https://via.placeholder.com/150',
-    quantity: 8
+    description: 'Groceries Order',
+    total: 49.99,
+    user: 'Carol White',
+    address: {
+      street: '789 Pine St',
+      city: 'Hilltown',
+      postalCode: '11223',
+      country: 'USA',
+    },
+    items: ['Milk', 'Bread', 'Eggs'],
+    orderNumber: 1003,
   },
-  {
-    id: 4,
-    name: 'Product 4',
-    description: 'Description of Product 4',
-    price: 49.99,
-    imageUrl: 'https://via.placeholder.com/150',
-    quantity: 12
-  }
 ];
