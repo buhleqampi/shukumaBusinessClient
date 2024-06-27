@@ -58,4 +58,17 @@
   (activate)="onActivate($event)"
   (deactivate)="onDeactivate($event)">
 </ngx-charts-pie-chart>
-
+<div class="grid grid-cols-3 gap-4 mb-6">
+    <div class="bg-gray-100 rounded-lg p-4">
+      <h3 class="text-lg font-medium mb-2">Current Deliveries</h3>
+      <p class="text-4xl font-bold">{{ currentDeliveries }}</p>
+    </div>
+    <div class="bg-gray-100 rounded-lg p-4">
+      <h3 class="text-lg font-medium mb-2">Previous Deliveries</h3>
+      <p class="text-4xl font-bold">{{ previousDeliveries }}</p>
+    </div>
+    <div class="bg-gray-100 rounded-lg p-4">
+      <h3 class="text-lg font-medium mb-2">Total Deliveries</h3>
+      <p class="text-4xl font-bold">{{ currentDeliveries + previousDeliveries }}</p>
+    </div>
+  </div>

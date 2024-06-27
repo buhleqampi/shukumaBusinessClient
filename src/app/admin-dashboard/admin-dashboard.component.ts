@@ -52,4 +52,6 @@ export class AdminDashboardComponent implements OnInit {
   onDeactivate(data: any): void {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
+  currentDeliveries: number = 50;
+  previousDeliveries: number = 100;
 }
