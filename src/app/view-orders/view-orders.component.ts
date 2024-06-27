@@ -8,10 +8,14 @@ import { orders } from '../../../mock-data';
   styleUrl: './view-orders.component.css'
 })
 export class ViewOrdersComponent implements OnInit {
-  orders: Order[] = orders;
 
-  constructor() { }
+  product: Product | undefined;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-  }
+    const id = this.route.snapshot.paramMap.get('id');
+    if (id) {
+      this.product = products.find(p => p.id );
+    }
 }
