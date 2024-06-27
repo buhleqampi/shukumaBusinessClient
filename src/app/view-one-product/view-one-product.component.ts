@@ -10,6 +10,7 @@ import { products } from '../../../mock-products';
 })
 export class ViewOneProductComponent {
   product: Product | undefined;
+isAdded: any;
 
   constructor(private route: ActivatedRoute) { }
 

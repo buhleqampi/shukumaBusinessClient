@@ -1,21 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { Order } from '../interface/order';
-import { orders } from '../../../mock-data';
+// import { orders } from './../../../mock-data';
+// import { Component, OnInit } from '@angular/core';
+// import { Order } from '../interface/order';
 
-@Component({
-  selector: 'app-view-orders',
-  templateUrl: './view-orders.component.html',
-  styleUrl: './view-orders.component.css'
-})
-export class ViewOrdersComponent implements OnInit {
 
-  product: Product | undefined;
+// @Component({
+//   selector: 'app-view-orders',
+//   templateUrl: './view-orders.component.html',
+//   styleUrl: './view-orders.component.css'
+// })
+// export class ViewOrdersComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+//   orders: Order | undefined;
 
-  ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.product = products.find(p => p.id );
-    }
+//   constructor(private route: ActivatedRoute) { }
+
+//   ngOnInit(): void {
+//     const id = this.route.snapshot.paramMap.get('id');
+//     if (id) {
+//       this.orders = orders.find(p => p.id );
+//     }
+//   }
+import { Component } from '@angular/core';
+
+export class ViewOrdersComponent  {
 }
+
