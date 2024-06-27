@@ -13,6 +13,7 @@ export const orders: Order[] = [
     },
     items: ['Laptop', 'Mouse'],
     orderNumber: 1001,
+    id: undefined
   },
   {
     description: 'Books Order',
@@ -26,18 +27,20 @@ export const orders: Order[] = [
     },
     items: ['Book A', 'Book B', 'Book C'],
     orderNumber: 1002,
+    id: undefined
   },
-  {
-    description: 'Groceries Order',
-    total: 49.99,
-    user: 'Carol White',
-    address: {
-      street: '789 Pine St',
-      city: 'Hilltown',
-      postalCode: '11223',
-      country: 'USA',
-    },
-    items: ['Milk', 'Bread', 'Eggs'],
-    orderNumber: 1003,
+{
+  description: 'Groceries Order',
+  total: 49.99,
+  user: 'Carol White',
+  address: {
+    street: '789 Pine St',
+    city: 'Hilltown',
+    postalCode: '11223',
+    country: 'USA',
   },
+  items: ['Milk', 'Bread', 'Eggs'],
+  orderNumber: 1003,
+  id: undefined
+}
 ];
