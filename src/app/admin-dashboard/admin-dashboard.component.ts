@@ -29,27 +29,27 @@ export class AdminDashboardComponent implements OnInit {
     this.visitorsValue = this.visitorsValue + 50;
     this.ordersValue = this.ordersValue + 5;
   }
-  pieChartData = [
-    { name: 'Sales', value: 55 },
-    { name: 'Expenses', value: 25 },
-    { name: 'Profit', value: 20 }
-  ];
+  // pieChartData = [
+  //   { name: 'Sales', value: 55 },
+  //   { name: 'Expenses', value: 25 },
+  //   { name: 'Profit', value: 20 }
+  // ];
 
-  gradient = false;
-  showLegend = true;
-  showLabels = true;
-  isDoughnut = false;
-  legendTitle = 'Legend';
+  // gradient = false;
+  // showLegend = true;
+  // showLabels = true;
+  // isDoughnut = false;
+  // legendTitle = 'Legend';
 
-  onSelect(data: any): void {
-    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
-  }
+  // onSelect(data: any): void {
+  //   console.log('Item clicked', JSON.parse(JSON.stringify(data)));
+  // }
 
-  onActivate(data: any): void {
-    console.log('Activate', JSON.parse(JSON.stringify(data)));
-  }
+  // onActivate(data: any): void {
+  //   console.log('Activate', JSON.parse(JSON.stringify(data)));
+  // }
 
-  onDeactivate(data: any): void {
-    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
-  }
+  // onDeactivate(data: any): void {
+  //   console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+  // }
 }
