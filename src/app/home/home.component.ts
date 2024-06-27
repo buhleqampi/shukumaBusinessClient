@@ -13,7 +13,7 @@ export class HomeComponent {
       title: 'Service 1',
       description: 'Description of Service 1',
       imageUrl: 'service1.jpg',
-      url: '/oneproduct'
+      url: '/addproduct'
     },
   ];
 

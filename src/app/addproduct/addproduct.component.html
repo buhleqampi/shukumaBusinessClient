@@ -5,16 +5,21 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Add </h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Product</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form class="form">
-        <input type="text" placeholder="Name" [(ngModel)]="product.name" class="form-input mt-2" name="name">
-        <input type="text" placeholder="Description" [(ngModel)]="product.description" class="form-input mt-2" name="description">
-        <input type="number" placeholder="Price" [(ngModel)]="product.price" class="form-input mt-2" name="price">
-        <input type="text" placeholder="Image URL" [(ngModel)]="product.imageUrl" class="form-input mt-2" name="imageUrl">
-        <input type="number" placeholder="Quantity" [(ngModel)]="product.quantity" class="form-input mt-2" name="quantity">
-      </form>
+      <div class="modal-body">
+        <form class="form">
+          <input type="text" placeholder="Name" [(ngModel)]="product.name" class="form-input mt-2" name="name">
+          <input type="text" placeholder="Description" [(ngModel)]="product.description" class="form-input mt-2" name="description">
+          <input type="number" placeholder="Price" [(ngModel)]="product.price" class="form-input mt-2" name="price">
+          <input type="text" placeholder="Image URL" [(ngModel)]="product.imageUrl" class="form-input mt-2" name="imageUrl">
+          <input type="number" placeholder="Quantity" [(ngModel)]="product.quantity" class="form-input mt-2" name="quantity">
+        </form>
+        <div class="mt-4">
+          <img [src]="product.imageUrl" alt="Product Image" class="w-full max-h-64 object-contain">
+        </div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" (click)="addProduct()">Save changes</button>
@@ -22,4 +27,3 @@
     </div>
   </div>
 </div>
-
