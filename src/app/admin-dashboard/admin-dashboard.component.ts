@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './admin-dashboard.component.css'
 })
 export class AdminDashboardComponent implements OnInit {
-  
+
   constructor(private router: Router) {}
 
   navigateToRoute(route: string) {
