@@ -1,5 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface SideNavToggle {
   screenwidth:number;
@@ -10,7 +10,10 @@ interface SideNavToggle {
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.css'
 })
-export class SidenavComponent {
+export class SidenavComponent implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 isSidebarOpen: any;
 toggleSidebar() {
 throw new Error('Method not implemented.');
@@ -19,7 +22,7 @@ throw new Error('Method not implemented.');
  navData = [
   {
     label: 'Home',
-    routerLink: '/',
+    routerLink: '/userhome',
     icon: 'fas fa-home'
   },
   {
